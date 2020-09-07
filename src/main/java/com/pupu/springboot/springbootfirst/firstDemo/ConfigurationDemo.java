@@ -12,8 +12,9 @@ import org.springframework.context.annotation.Configuration;
 public class ConfigurationDemo {
 
 
-    @Bean// singleton
-    public DemoClass demoClass(){
-        return new DemoClass();
-    }
+//    @Bean// singleton
+//    @Scope("prototype")
+//    public DemoClass demoClass(){
+//        return new DemoClass();
+//    }
 }
