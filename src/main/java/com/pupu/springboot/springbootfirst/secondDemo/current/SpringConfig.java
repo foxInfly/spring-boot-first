@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Import;
  * @author : lipu
  * @since : 2020-09-07 23:48
  */
-@Import(OtherConfig.class)
+@Import(OtherConfig.class)//加入第三方依赖配置
 @Configuration
 public class SpringConfig {
 
