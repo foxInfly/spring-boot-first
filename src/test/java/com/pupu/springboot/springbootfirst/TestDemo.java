@@ -1,6 +1,6 @@
 package com.pupu.springboot.springbootfirst;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.springframework.util.StringUtils;
 
 /**

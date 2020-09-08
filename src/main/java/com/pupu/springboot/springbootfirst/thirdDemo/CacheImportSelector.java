@@ -12,17 +12,21 @@ import java.util.Map;
 public class CacheImportSelector implements ImportSelector {
 
     /**
+     * 获取元注解  SPI扩展点
      *
      * @param annotationMetadata 注解元数据
      * @return String[]
      */
     @Override
     public String[] selectImports(AnnotationMetadata annotationMetadata) {
-        Map<String,Object> attributes =
+        Map<String, Object> attributes =
                 annotationMetadata.getAnnotationAttributes(EnableDefineService.class.getName());
 
         //动态注入bean
         String[] strings = {CacheService.class.getName()};
+        String[] str = {"org.springframework.boot.autoconfigure.couchbase.CouchbaseAutoConfiguration," +
+                "org.springframework.boot.autoconfigure.dao.PersistenceExceptionTranslationAutoConfiguration," +
+                "org.springframework.boot.autoconfigure.data.cassandra.CassandraDataAutoConfiguration"};
 //        if (annotationMetadata. == null) {
 //
 //        }
