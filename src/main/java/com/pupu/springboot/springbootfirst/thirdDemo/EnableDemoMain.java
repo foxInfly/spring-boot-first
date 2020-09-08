@@ -8,7 +8,7 @@ import org.springframework.context.ConfigurableApplicationContext;
  * @author : lipu
  * @since : 2020-09-08 00:14
  */
-@SpringBootApplication
+//@SpringBootApplication
 //@EnableDefineService
 @EnableDefineService(exclude = {LoggerService.class})
 public class EnableDemoMain {

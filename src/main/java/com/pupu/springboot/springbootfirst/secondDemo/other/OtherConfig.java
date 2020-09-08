@@ -13,7 +13,7 @@ public class OtherConfig {
 
 
     @Bean
-    public OtherConfig defaultBean(){
-        return  new OtherConfig();
+    public OtherBean otherBean(){
+        return  new OtherBean();
     }
 }
